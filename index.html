@@ -174,7 +174,7 @@
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
           </div>
           <div class="product-image">
             <img src="img/products1.jpg" alt="Product 1" />
@@ -194,7 +194,7 @@
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
           </div>
           <div class="product-image">
             <img src="img/products2.jpg" alt="Product 1" />
@@ -264,6 +264,33 @@
     </footer>
     <!--footer end-->
 
+     <!-- modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products1.jpg" alt="product 1" />
+          <div class="product-content">
+            <h3>Buket Bunga Mawar Putih</h3>
+            <p>
+             Setiap bunga dipilih dengan teliti dan dirangkai dengan tangan profesional, untuk memastikan keindahan dan ketahanan yang maksimal.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 80K <span>IDR 85K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal box item detail end -->
     <!--Feather Icons-->
     <script>
       feather.replace();

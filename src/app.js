@@ -16,6 +16,18 @@ document.addEventListener("alpine:init", () => {
       },
     ],
   }));
+
+  Alpine.store("cart", {
+    items: [],
+    total: 0,
+    quantity: 0,
+    add(newItem) {
+      this.items.push(newItem);
+      this.quantity++;
+      this.total += newItem.price;
+      console.log(this.total);
+    },
+  });
 });
 
 //konversi ke rupiah

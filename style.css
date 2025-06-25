@@ -184,13 +184,22 @@ body {
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
+.hero .mask-container {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: url("img/header.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+}
+
 .hero .content {
   padding: 1.4rem 7%;
   /*max-width: 60rem;*/
   width: 100;
   text-align: center;
   position: fixed;
-  top: 185px;
+  top: 50px;
 }
 
 .hero .content h1 {
